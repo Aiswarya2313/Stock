@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>MNATPL</title>
+</head>
+<body>
+  <h2>Enter Password to Continue</h2>
+  <input type="password" id="passwordInput" placeholder="Enter password">
+  <button onclick="checkPassword()">Submit</button>
+
+  <script>
+    function checkPassword() {
+      const password = document.getElementById('passwordInput').value;
+      if (password === 'MNATPL') {
+        window.location.href = 'https://github.com/Aiswarya2313/Stock.git';
+      } else {
+        alert('Incorrect password.');
+      }
+    }
+  </script>
+</body>
+</html>
